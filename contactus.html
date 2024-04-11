@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="./contactUs.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins, sans-serif');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #162938 no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.logo{
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover:after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+.navigation .btnLogin-popup:hover{
+    background: #fff;
+    color: #162938;
+}
+
+.contact-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 100px auto;
+}
+form{
+    width: 40%;
+    margin: auto;
+}
+form h2{
+    font-size: 32px;
+    color: #bed485;
+    margin-bottom: 25px;
+}
+.contact-form label{
+    font-size: 16px;
+    color: #fff;
+}
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    outline-style: none;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.contact-form input:hover,
+.contact-form textarea:hover{
+    border: 1px solid #36d66d;
+}
+
+.btn{
+    background-color: #007bff;
+    color: #fff;
+    font-size: 17px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: red;
+}
+
+.contact-content{
+    width: 40%;
+    line-height: 1.5;
+}
+.contact-content h2{
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+.contact-content p{
+    color: #bed485;
+    font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+    .contact-form{
+        width: 85%;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+    }
+    form{
+        width: 100%;
+    }
+    .contact-content{
+        width: 100%;
+        margin-top: 25px;
+    }
+    
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h2 class="logo">CONTACT US</h2>
+        <nav class="navigation">
+              <a href="./index(HOME).html">Home</a>
+              <a href="./about.html">About</a>
+              <a href="./services.html">Services</a>
+              <a href="./contactus.html">Contact us</a>
+              <a href="./login.html"><button class="btnLogin-popup">Login</button></a>
+              <a href="./register.html"><button class="btnLogin-popup">Register</button></a>
+        </nav>
+    </header>
+
+    <div class="contact-form">
+        <form>
+            <div class="form-group">
+                <label for="name">Name: </label>
+                <input type="text" name="name" required = "">
+            </div>
+            <div class="form-group">
+                <label for="email">Email: </label>
+                <input type="email" name="email" required="">
+            </div>
+            <div class="form-group">
+                <label for="message">Message: </label>
+                <textarea name="message"  cols="4" required=""></textarea>
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+        <div class="contact-content">
+            <h2>Our Adress</h2>
+            <p>43 Hallsburg Avenue, Alabama, United States Of America</p>
+            <p>Phone: +250-724-490-814</p>
+            <p>Email: humura53@gmail.com</p>
+        </div>    
+    </div> 
+    
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../../xampp/htdocs/QUADRATIC EQUATION"
+		},
+		{
+			"path": "../../../../../../xampp/htdocs/VOTING"
+		},
+		{
+			"path": "../../../../../../xampp/htdocs/QUADRATIC"
+		},
+		{
+			"path": "../../official"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../../../My Web Sites/Desktop/www.w3schools.com"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "vac",
+		"git.ignoreLimitWarning": true
+	}
+}
